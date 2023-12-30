@@ -4,7 +4,6 @@ import Image from "next/image";
 import { NextPage } from "next";
 import {PoweredBy} from "../components/PoweredBy/PoweredBy";
 import {GitHub} from "../components/PoweredBy/GitHub";
-import {GridLoader} from "react-spinners";
 import Link from "next/link";
 import { useEffect, useState } from "react";
 import { useRouter } from 'next/router';
