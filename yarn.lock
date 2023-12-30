@@ -6135,10 +6135,10 @@ minimist@^1.2.0, minimist@^1.2.6:
   resolved "https://registry.yarnpkg.com/minimist/-/minimist-1.2.8.tgz#c1a464e7693302e082a075cee0c057741ac4772c"
   integrity sha512-2yyAR8qBkN3YuheJanUpWC5U3bb5osDywNB8RzDVlDwDHbocAJveqqj1u8+SVD7jkWT4yvsHCpWqqWqAxb0zCA==
 
-mixtape-search@^0.0.2:
-  version "0.0.2"
-  resolved "https://registry.yarnpkg.com/mixtape-search/-/mixtape-search-0.0.2.tgz#ca9a18c59412053dd4dd1c362052ee35ccb1b8ef"
-  integrity sha512-/ZcysTvSK+vaKq+ONMOiOy01GjvCcJwvWS+Xjby7W2gRrLfImgioeZDRMPyVKk7Vui5NNVHVxt+0PxpsAODJTw==
+mixtape-search@^0.0.5:
+  version "0.0.5"
+  resolved "https://registry.yarnpkg.com/mixtape-search/-/mixtape-search-0.0.5.tgz#30ba3fa85810a8c07740fb55b7b29129fa5b3bd9"
+  integrity sha512-j56r87cgtet5bH/YFC1dWwUVJeY2FfS+HSkHr/Sc8z0JSZewrf5fiIrWqn6M1R9VBOZJ2Y2SVKwg0n+Ibg671g==
   dependencies:
     "@babel/plugin-proposal-class-properties" "^7.18.6"
     crypto-browserify "^3.12.0"

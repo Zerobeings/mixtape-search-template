@@ -15,7 +15,7 @@
     "@thirdweb-dev/sdk": "^4",
     "@vercel/analytics": "^1.1.1",
     "ethers": "^5",
-    "mixtape-search": "^0.0.2",
+    "mixtape-search": "^0.0.5",
     "next": "^13",
     "nextjs-progressbar": "^0.0.16",
     "react": "^18.2",
