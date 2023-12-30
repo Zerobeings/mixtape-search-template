@@ -15,9 +15,6 @@ const Home: NextPage = () => {
   return (
     <main>
       <div className={styles.container}>
-        <h4 className={styles.title}>
-          edit <code>`pages/index.tsx`</code> to begin.
-        </h4>
       <MixtapeSearchPackNOSSR/>
       </div>
       <PoweredBy />

@@ -5,6 +5,7 @@ import styles from "./Searchbar.module.css";
 export default function MixtapeSearchPackNOSSR(){
   const [fetchedNFTs, setFetchedNFTs] = useState<any[]>([]);
   const [loading, setLoading] = useState<boolean>(false);
+  const [darkMode, setDarkMode] = useState<boolean>(false);
 
   const handleNFTsFetched = (nfts: any[]) => {
         setLoading(true);
@@ -16,13 +17,15 @@ export default function MixtapeSearchPackNOSSR(){
   console.log("fetchedNFTs", fetchedNFTs);
 
   return (
-    <div>
-  <h3 className={styles.heading}>yarn add mixtape-search</h3>
-  <div className={styles.container}>
+    <>
+    <h1 className={styles.mainHeading}>A searchbar for NFTs</h1>
+    <h3 className={styles.heading}>yarn add mixtape-search</h3>
+    <div className={styles.container}>
       <div className={styles.mixtape}> 
+      <button className={styles.button} onClick={() => setDarkMode(!darkMode)}>Toggle Searchbar Theme</button>
           <MixtapeSearch 
               activeNetwork={"ethereum"}
-              theme={"dark"} // "light" or "dark"
+              theme={darkMode ? "dark" : "light"} // "light" or "dark"
               onNFTsFetched={handleNFTsFetched}
           />
       </div>
@@ -48,7 +51,7 @@ export default function MixtapeSearchPackNOSSR(){
           )}
       </div>
   </div>
-</div>
+</>
 
   )
 }
