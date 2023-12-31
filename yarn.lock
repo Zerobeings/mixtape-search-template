@@ -2047,7 +2047,7 @@
     mime "3.0.0"
     tiny-invariant "^1.2.0"
 
-"@thirdweb-dev/react@^4":
+"@thirdweb-dev/react@^4.1.17":
   version "4.1.17"
   resolved "https://registry.yarnpkg.com/@thirdweb-dev/react/-/react-4.1.17.tgz#ccd4a5e564601a26b578e24b30579fc34cc12b29"
   integrity sha512-Tq0iJh1znoexz4bxOvj0e7wcmLSmtXcKM0yIVxkxXLMwKD+IkZrGxFG115naGMn9z1Ot8zMWXhTZbSIPo/Vqgg==
@@ -2075,7 +2075,7 @@
     qrcode "^1.5.3"
     tiny-invariant "^1.2.0"
 
-"@thirdweb-dev/sdk@4.0.23", "@thirdweb-dev/sdk@^4":
+"@thirdweb-dev/sdk@4.0.23", "@thirdweb-dev/sdk@^4.0.23":
   version "4.0.23"
   resolved "https://registry.yarnpkg.com/@thirdweb-dev/sdk/-/sdk-4.0.23.tgz#4c5e692abf63ce0219796bafd4c80f9d24d03b1b"
   integrity sha512-xDEsJbwYOZAp2BAkevvt/R1ZX4AgD0gwy9O0/kPe7jUG7Nrw2u790DFUsATHS00xi8lirXeTcw5VIDGwJ6TFTg==
