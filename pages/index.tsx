@@ -17,8 +17,10 @@ const Home: NextPage = () => {
       <div className={styles.container}>
       <MixtapeSearchPackNOSSR/>
       </div>
+      <div className={styles.headerBg}>
       <PoweredBy />
       <GitHub />
+      </div>
     </main>
   );
 };
