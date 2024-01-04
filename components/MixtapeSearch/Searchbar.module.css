@@ -34,6 +34,23 @@
     width: 300px; 
     margin-bottom: 30px;
     cursor: pointer;
+    border: 1px solid #686767;
+}
+
+.button:hover{
+    background-color: #686767;
+}
+
+.selectNetwork{
+    background-color: #333; 
+    color: lime; 
+    font-family: monospace; 
+    padding: 10px;
+    border-radius: 15px; 
+    width: 120px; 
+    margin-bottom: 30px;
+    cursor: pointer;
+    margin-left: 10px;
 }
 
 .mixtape {

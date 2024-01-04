@@ -13,7 +13,7 @@ export default function MixtapeSearchPackNOSSR(){
   const [fetchedNFTs, setFetchedNFTs] = useState<any[]>([]);
   const [loading, setLoading] = useState<boolean>(false);
   const [darkMode, setDarkMode] = useState<boolean>(false);
-  const network = "ethereum"; // "ethereum" or "polygon" match the network set up in the thirdweb-react provider
+  const [network, setNetwork] = useState<string>("ethereum");
   const [attributes, setAttributes] = useState<Attributes>({});
   const [allNFTs, setAllNFTs] = useState<any[]>([]);
 
@@ -58,7 +58,6 @@ export default function MixtapeSearchPackNOSSR(){
     }, 1000);
 }, [setLoading, setFetchedNFTs, setAllNFTs, setAttributes, extractAttributes]);
 
-  console.log("fetchedNFTs", fetchedNFTs);
 
   // search params
   const [limit, setLimit] = useState<number>(100);
@@ -91,14 +90,25 @@ export default function MixtapeSearchPackNOSSR(){
     handleAttributeFromCard(clear, 0);
     setFetchedNFTs(allNFTs);
   }
+  
+  const handleNetworkChange = (network: string) => {
+    setNetwork(network);
+  }
 
   return (
     <>
     <h1 className={styles.mainHeading}>A searchbar for NFTs</h1>
     <h3 className={styles.heading}>yarn add mixtape-search</h3>
     <div className={styles.container}>
-      <div className={styles.mixtape}> 
-        <button className={styles.button} onClick={() => setDarkMode(!darkMode)}>Toggle Searchbar Theme</button>
+    <div className={styles.mixtape}>
+      <button className={styles.button} onClick={() => setDarkMode(!darkMode)}>Toggle Searchbar Theme</button>
+      {/* network selector */}
+      <select className={styles.selectNetwork} value={network} onChange={(e) => handleNetworkChange(e.target.value)}>
+        <option value="ethereum">Ethereum</option>
+        <option value="polygon">Polygon</option>
+        <option value="avalanche">Avalanche</option>
+        <option value="fantom">Fantom</option>
+      </select>
         <MixtapeSearch 
             activeNetwork={network}
             theme={darkMode ? "dark" : "light"} // "light" or "dark"
